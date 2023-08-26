@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand navbar-dark shadow headbar">
+
+    <div class="headbar-content">
+
+        <!-- align-left content -->
+        <div class="headbar-content-left">
+            <a style="font-size: 30px;" class="navbar-brand d-flex justify-content-between" href="#">
+                <i class="bi bi-emoji-smile"></i>
+                <span>HP SAMPLES</span>
+            </a>
+        </div>
+
+        <!-- align-right content -->
+        <div class="headbar-content-right">
+            <!-- logout -->
+            <div>
+                <form method="#" action="#" disabled>
+                    <button class="btn btn-outline-light text-nowrap" type="submit">
+                        Logout
+                    </button>
+                </form>
+            </div>
+
+            <!-- select languege-->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle text-nowrap"
+                    style="border: none; background-color: rgb(0,58,112)" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Language
+                </button>
+                <ul class="dropdown-menu">
+                    <li><button class="dropdown-item text-nowrap" type="button"
+                            onClick="setLang('ja','action')">日本語</button></li>
+                    <li><button class="dropdown-item text-nowrap" type="button"
+                            onClick="setLang('en','action')">English</button></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</nav>

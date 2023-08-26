@@ -1,0 +1,164 @@
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  /* 余白の削除 */
+  padding: 0;
+  /* 余白の削除 */
+  width: 100%;
+  height: 100%;
+  font-size: 87.5%;
+}
+
+.headbar {
+  position: fixed;
+  z-index: 1030;
+  background-color: rgb(0, 58, 112);
+  height: 80px;
+}
+
+.headbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 50px;
+}
+
+.headbar-content-left {
+  width: 250px;
+  font-size: 25px;
+}
+
+.headbar-content-right {
+  display: flex;
+  justify-content: end;
+}
+
+.footbar {
+  position: relative;
+  background-color: rgb(0, 58, 112);
+  color: white;
+  height: 80px;
+}
+
+.footbar-content {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 50px;
+}
+
+.footbar-content-right {
+  display: flex;
+  justify-content: end;
+}
+
+.wrapper {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+}
+
+.content-main {
+  display: flex;
+  flex-direction: column;
+  /* メインのコンテンツは垂直方向に配置 */
+  flex-grow: 1;
+  width: 100%;
+  padding-top: 90px;
+  padding-left: 20px;
+}
+
+.sidebar {
+  width: 300px;
+  height: calc(100vh - 80px);
+  flex-grow: 1;
+  overflow-y: auto;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: black;
+  top: 80px;
+  padding-bottom: 80px;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: dimgray;
+  border-radius: 5px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: rgb(50, 50, 50);
+  margin-bottom: 80px;
+}
+
+.sidebar-group {
+  margin-bottom: 10px;
+}
+
+.sidebar-btn-frame {
+  width: 280px;
+  padding: 0 10px;
+  color: white;
+  background-color: black;
+}
+
+.sidebar-btn-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-btn-title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 150px;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+}
+
+.sidebar-btn-icon-before {
+  font-size: 25px;
+  padding-right: 25px;
+  color: white;
+  background-color: black;
+}
+
+.sidebar-btn-icon-after {
+  font-size: 20px;
+  color: white;
+  background-color: black;
+}
+
+button[aria-expanded="false"] .sidebar-btn-icon-after {
+  color: white;
+  transform: rotate(90deg);
+  transition: 0.3s;
+}
+
+button[aria-expanded="true"] .sidebar-btn-icon-after {
+  color: white;
+  transform: rotate(0deg);
+  transition: 0.3s;
+}
+
+
+.sidebar .nav-link {
+  padding-left: 60px;
+  color: white;
+  background-color: black;
+  font-size: 18px;
+}
